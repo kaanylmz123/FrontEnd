@@ -1,0 +1,352 @@
+.active {
+    color:#000000;
+    background-color: rgba(157, 157, 255, 1) !important;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 15px;
+}
+
+li{
+    text-decoration: none;
+}
+.container-1{
+    display: flex;
+
+}
+.dikeymenu{
+    width: 300px;
+    background: linear-gradient(  rgba(245, 218, 255, 0.6) -1.6%, rgba(91, 71, 188, 0.3) 77.6%);
+    height: 1100px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+
+}
+
+.dikeymenu-ul{
+    list-style-type: none;
+}
+
+.dikeymenu a{
+    display: block;
+    color: #000;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.yataymenu{
+    background: linear-gradient(269.13deg, rgba(245, 218, 255, 0.6) -1.6%, rgba(255, 255, 255, 0) 77.6%);
+}
+.yataymenu-ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.yataymenu-li{
+    margin-left:20px;
+
+}
+
+.yataymenu a{
+    display: block;
+    color: #000;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.menu{
+    background: rgba(161, 95, 244, 1);
+    border:none;
+    border-radius: 15px;
+    height: 50px;
+    padding-left: 15px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    color: white;
+}
+
+.menu:hover{
+    background:rgb(124, 76, 183);
+}
+
+.bars{
+    display: flex;
+    flex-direction: column;
+}
+
+.info{
+    border:none;
+    border-radius: 50px;
+    height: 60px;
+    width: 280px;
+    background-color: rgba(242, 242, 253, 1);
+}
+
+.search{
+    border:none;
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 54px;
+    padding-left: 120px;
+    padding-right: 160px;
+    font-family: 'Mulish', sans-serif;
+    font-size: 1rem;
+}
+
+.task{
+    border:none;
+    border-radius: 50px;
+    background: rgba(253, 251, 251, 0);
+}
+
+.formss{
+    border:none;
+    border-radius: 15px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    background-color: rgba(255, 255, 255, 0);
+}
+.update{
+    border-radius: 80px;
+    background-color: #000;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+}
+.login-box{
+    width: 40%;
+    min-width: 600px;
+    height: 850px;
+    box-shadow: 0px 4px 20px 0px rgba(91, 71, 188, 0.3);
+    background: linear-gradient(  rgba(244, 193, 208, 0.6) -1.6%, rgba(133, 159, 236, 0.3) 77.6%);
+    border-radius: 20px;
+    margin: 40px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+input[type="text"],input[type="email"],input[type="tel"],input[type="password"]{
+    background-color: rgba(252, 252, 252, 0);
+    border-radius: 8px;
+    width: 365px;
+    border: 1px solid rgba(169, 169, 169, 1);
+}
+
+.changepic{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    text-align: center;
+}
+
+.logolar{
+    display: flex;
+    justify-content: space-around;
+    align-items:flex-end;
+}
+
+.mainPanel{
+    width: 100%;
+    height: 800px;
+    display: flex;            
+    justify-content: center;            
+    align-items: center;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+
+  .dropbtn {
+    color: white;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+  }
+  
+
+  .dropdown-content {
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  }
+  
+
+  .dropdown-content a {
+    color: rgb(250, 248, 248);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  .dropdown-content a:hover {
+    background-color: #f1f1f1;
+  }
+  
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .dropdown-menu{
+    background-color: #000;
+    color: #f1f1f1;
+  }
+  
+  .menu-tit{
+    color: #f1f1f1;
+    font-size: 1.5rem;
+    display: flex;
+  }
+
+
+  @media screen and (max-width: 1100px){
+    .search{
+        padding-left: 1rem;
+    }
+}
+
+@media screen and (max-width: 1035px){
+    .search{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 967px){
+    .d-flex-flex-column-justify-content-between{
+        display: none !important;
+    }
+
+    span.summary{
+        font-size: 0.80rem;
+    }
+
+    .yataymenu li{
+        display: none;
+    }
+
+    .active{
+        display: none;
+    }
+
+    .navbar{
+        display: flex;
+        align-items: baseline;
+    }
+
+    .resized-heading{
+        font-size: 2rem;
+        font-family: 'Mohave';
+    }
+
+    .resized-dropdown{
+        display: flex;
+        justify-content: center;
+        width: 63vw;
+        margin: auto;
+    }
+
+    /* .menu{
+        width: 70%;    
+        height: 50px; 
+        border-radius: 15px; 
+        font-family: 'Inter', sans-serif;
+        background-color: rgba(161, 95, 244, 1); 
+        color: rgba(255, 255, 255, 1); 
+        box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.263); 
+        font-size: 1.25rem; 
+    } */
+
+    .menu {
+        display: block;
+        width: 150px;
+        height: 50px;
+        background-color: #007bff;
+        color: #fff;
+        font-size: 1rem;
+        border: none;
+        cursor: pointer;
+      }
+
+    .exit{
+        display: flex;
+        align-items: center;
+        justify-content: end;
+    }
+}
+
+@media screen and (max-width: 920px) {
+    span.texts{
+        font-size: 0.60rem;
+    }
+
+    span.summary{
+        font-size: 0.70rem;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    span.summary{
+        font-size: 0.60rem;
+    }
+}
+
+@media screen and (max-width: 577px){
+
+    .material-symbols-outlined{
+        position: absolute;
+        margin-left: -2.5rem;
+        margin-top: 0.4rem;
+    }
+
+    span.summary{
+        font-size: 0.60rem;
+    }
+
+    span.texts{
+        font-size: 0.50rem;
+    }
+
+}
+
+@media screen and (max-width: 552px) {
+    span.summary{
+        font-size: 0.57rem;
+    }
+
+    .status{
+        font-size: 0.75rem;
+        text-align: center;
+    }
+
+    .nums{
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 438px){
+    span.summary{
+        font-size: 0.3rem;
+    }
+    
+    .resized-dropdown{
+        width: 40vw;
+    }
+}
+
+@media screen and (min-width: 967px){
+    .resized-dropdown{
+        display: none;
+    }
+
+    .menu{
+        display: none !important;
+    }
+}
