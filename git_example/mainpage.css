@@ -2,6 +2,10 @@ body{
     background-color:rgb(235, 235, 252);
 }
 
+.container-1{
+    display: flex;
+    flex-direction: column;
+}
 .mainPanel-1{
     display: flex;
     flex-direction: column;
@@ -21,6 +25,8 @@ body{
 .swim{
     border-radius: 8px;
     width: 73vw;
+    position: relative;
+    display: inline-block;
     /* margin-left: 1.5rem; */
 }
 
@@ -32,11 +38,10 @@ body{
     /* margin-left: 1.5rem; */
 }
 .swimming{
-    top: 49%;
-    transform: translate(-16%, -215%);
     color: white;
+    position:sticky;
     font-size: 24px;
-    text-align:center;
+    text-align:left;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     font-family: 'Playfair Display', serif;
     font-weight: 700;
@@ -114,24 +119,121 @@ body{
   
 .uclu{
     width:23vw;
+    display: flex;
 
 }
 .ilk-kutu{
     height: 23vw;
-    width: 45vw;
+    width: 40vw;
     box-shadow: 0px 4px 20px 0px rgba(91, 71, 188, 0.3);
     background: linear-gradient(  rgba(244, 193, 208, 0.6) -1.6%, rgba(133, 159, 236, 0.3) 77.6%);
+    border-radius: 20px;
 }
 .son-kutu{
     height: 23vw;
     width: 27vw;
     box-shadow: 0px 4px 20px 0px rgba(91, 71, 188, 0.3);
     background: linear-gradient(  rgba(244, 193, 208, 0.6) -1.6%, rgba(133, 159, 236, 0.3) 77.6%);
+    border-radius: 20px;
 }
 
-/* @media screen and (max-width:250px) {
-    .mainPanel-1{
+.calisanlar{
+    margin:20px;
+}
+.baslik-p{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    list-style-type: none;
+    color:rgba(130, 130, 130, 1);
+    margin-left:5px;
+    font-size:0.813rem;
+}
+
+.list-n{
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    list-style-type: none;
+    color:rgba(130, 130, 130, 1);
+    margin:10px;
+    font-size: 1.125rem;
+}
+
+.baslik-t{
+    display: flex;
+    justify-content: space-between;
+    margin:15px;
+    list-style-type: none;
+}
+
+.tastinf{
+    margin-right: 35px;
+    margin-top:30px;
+    font-family: 'Poppins', serif;
+    color:rgba(130, 130, 130, 1);
+    font-size: 0.813rem;
+}
+
+.columnpage {
+    display: flex;
+    flex-wrap: wrap;
+    grid-template-columns: repeat(4,1fr);
+  }
+  .columnpage img {
+    max-width: 100%;
+}
+
+.tablo{
+    margin-top:30px;
+    margin-left:20px;
+}
+
+.ogeler{
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Poppins', serif;
+    font-size: 0.813rem;
+    margin-right: 35px;
+}
+.ogeler-1{
+    color: rgba(79, 79, 79, 1);
+    font-weight: 600;
+}
+.with-dot::before {
+    content: "•";
+    font-size: 15px;
+    color:rgba(33, 150, 83, 1);
+}
+
+.ogeler-2{
+    color: rgba(79, 79, 79, 1);
+    font-weight: 300;
+}
+
+.ogeler-3{
+    color:rgba(33, 150, 83, 1);
+    font-weight: 400;
+    
+}
+
+#cyber{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width:415px){
+    .columnpage{
         display: inline-block;
+        /* flex-direction: column; */
+        grid-template-columns: repeat(12,1fr);
+        width: 100%;
+        
     }
-}   */
-  
+
+    .ogeler{
+        font-size: xx-small;
+    }
+
+    .baslik-t{
+        font-size: xx-small;
+    }
+}
